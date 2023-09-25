@@ -1,0 +1,34 @@
+Patrick Suijk
+CSE2431
+Lab4 "Personal Project"
+
+Instructions:
+
+Type 'lab4' into the linux command line
+this will run the executable.
+
+To rebuild the contents of this lab, type
+'make clean' into the linux command line
+to wipe releveant contents. Then type
+'make' to rebuild the executable.
+
+Expected Results:
+
+The writer threads read from two separate files,
+writerFile1 and writerFile2. Upon successful execution
+(the program will inform the user whether execution was
+successful or not just before it exits), the account
+balances should read as follows:
+
+    acc1 bal = 654.2
+    acc2 bal = 185
+    acc3 bal = 95.47
+
+Warning:
+
+When the program runs, it may at first glance seem to be
+an infinte loop. This is due to the non-deterministic nature
+of the OS's scheudling routine. If you pay attention to the
+balances being read, the will be changing over time as writers
+periodically gain access to change the balance. Rest assured
+the execution will complete, usually within a couple minutes.
